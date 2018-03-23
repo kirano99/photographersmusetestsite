@@ -1,0 +1,314 @@
+body{
+    display: block;
+    background-color: white;
+    overflow:scroll;
+    overflow-x:hidden;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+@font-face {
+	font-family: 'MarckScript';
+	src: local('MarckScript'), url('../Fonts/MarckScript-Regular.woff') format('woff'), url('/Fonts/MarckScript-Regular.ttf') format('truetype');
+}
+
+body {
+	font-family: 'MarckScript' !important;
+    font-size: 40px
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.largeimage{
+
+    height: auto;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#frontslide{
+    position: relative;
+    bottom: 100px
+}
+
+.navclass{
+    width:690px; 
+    height: auto;  
+    position:relative;
+    left: 69%;
+    transform:translate(-30%, -240%);
+    z-index: 999;
+    bottom: 60px;
+    }
+
+.button{
+    
+    background-color: #6489CE;
+    color: white;
+    padding: 10px 10px;
+    text-align: left; 
+    text-decoration: none;
+    display: inline-table;
+    height:auto;
+}
+
+.bar-item:hover{
+    background-color: #99B38F;
+}
+
+.button:hover{
+    text-shadow:1px 0px #555;
+  -moz-transform:scale(1.08); 
+  -webkit-transform:scale(1.08);
+  -o-transform:scale(1.08);
+}
+
+a{
+    text-decoration:none;
+}
+
+section{
+    background-size:auto;
+    height:100vh;
+    width: 100vw;
+    display: table;
+}
+
+h1{
+    color: white;
+    font-size: 40pt;
+    color: #6489CE;
+    margin: 75px;
+    position: relative;
+    left:100px;
+    bottom: 60px;
+}
+
+h1:hover{
+    
+    color: #99B38F;
+}
+
+
+#scroller_content_one{
+    
+    position: relative;
+    background-size: cover;
+    background-color: white;
+    height: 400px;
+}
+
+#Text_One{
+text-align: center;
+display: table-cell;
+vertical-align: middle;  
+}
+#smallertext{
+    font-size: 35pt ;
+}
+#coverpicture{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+#smalllogobottom{
+    width:500px; 
+    height: auto;  
+    position:fixed;
+    left:50%;
+    right: 50%;
+    transform:translate(-50%, 0%);
+    position: relative;
+    z-index: 999;
+}
+#smallscroll{
+    position: relative;
+    background-size: cover;
+    background-color: white;
+    height: 0;
+}
+h3{
+color: black;
+text-align: center;
+vertical-align: middle; 
+    margin: 0;
+}
+
+#simple-menu{
+    position: fixed;
+    z-index: 999;
+   padding: 0;
+    margin: 0;
+    top:20px;
+    background-color: transparent;
+}
+#menuimg{
+    height: auto; 
+    width: auto; 
+    max-width: 50px; 
+    max-height: 50px;
+}
+
+
+.flip {
+    height: 300px;
+    width: 300px;
+    margin: 0;
+}
+.flip img {
+    width: 300px;
+    height: 300px;
+}
+
+.flip .back {
+    position: relative;
+    background: #e11d22;
+    color: #fff;
+    text-align: center;
+    z-index: -999;
+}
+
+.flip .front{
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.slides{
+    position: relative;
+    bottom: 190px;
+    height: auto;
+    width: auto;
+}
+.slideimg{
+  max-width:auto;
+  max-height:800px;
+  width: auto;
+  height: auto;
+}
+
+#invisibutton{
+    width: 1000px
+}
+
+
+
+
+
+
+/* media Queries... */
+
+    
+@media only screen and (min-width : 860px) { /*when width is larger than 700*/
+
+    #scroller_content_one{
+        height:400px;
+    }
+    #imagecover{
+        height: auto
+    }
+    #simple-menu{
+        visibility: hidden;
+    }
+    
+    h1{
+        font-size: 70pt;
+    }
+    
+    #scrollbutton{
+        font-size: 40pt;
+    }
+
+
+    
+    
+    
+    }
+
+@media only screen and (max-width : 1400px) {
+    #controls{
+        top: 1000px;
+        Right: 1500px;
+    }
+}
+
+@media only screen and (max-width : 860px) { /*when width is less than 700*/
+    .bar-item{
+        visibility: hidden;
+    }
+    .textlogo{
+        transform:translate(-50%, 40%);
+        position: absolute;
+    }
+        #scroller_content_one{
+        height:100px
+    }
+        #imagecover{
+        height:auto;
+    }
+    
+        .cart{
+        top:600px;
+    }
+
+    .products{
+        margin-bottom: 400px;
+    }
+}
+
+@media only screen and (max-width : 1570px) { /*when width is less than 430*/
+
+    .bar-item{
+        visibility: hidden;
+    }
+    
+        #simple-menu{
+        visibility: visible;
+    }
+    
+@media only screen and (max-width : 400px) {
+    
+        .video-foreground,.video-background iframe {
+        visibility: hidden;
+    }
+    
+    .video-background, .video-foreground{
+                height: 200px;
+                
+    }
+            
+        .textlogo1{
+                width:200px; 
+                height: auto; 
+    }
+    
+    #playbutton{
+        margin: 0px;
+        padding: 0px
+    }
+            
+            
+    
+}
+    
+        @media only screen and (max-width : 560px) { /*when width is less than 400*/
+
+            h1{
+                font-size: 35px;
+                left: -20px;
+                top: -52px
+            }
+}
+    
+    @media only screen and (max-width : 200px) { /*when width is less than 400*/
+        body{
+            visibility: hidden;
+        }
+}
